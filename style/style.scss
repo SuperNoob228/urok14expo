@@ -1,0 +1,13 @@
+@mixin btnDefault($fsize, $bg, $py, $px, $color) {
+    font-size: $fsize;
+    background-color: $bg;
+    padding: $py $px;
+    color: $color;
+}
+
+.btn{
+    @include btnDefault(12px, rgb(209, 0, 0), 5px, 10px, #fff)
+}
+.btn2{
+    @include btnDefault(12px, rgb(81, 201, 57), 7px, 15px, #257fd3)
+}
